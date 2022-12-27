@@ -5,8 +5,13 @@
 #              n(n+1)
 #  suma = ________________ 
 #                2   
-print('SUMANDO ENTEROS POSITIVOS HSATA N')
+print('SUMANDO ENTEROS POSITIVOS HASTA N')
 # la variable number representa a n en la formula
 number = int(input('Introdusca un numero entero positivo: '))
-total = int((number*(number+1))/2)
+total = 0
+
+for i in range(0, number):
+  total = total + i
+
 print(f'Sumatoria: {total}')
+  
